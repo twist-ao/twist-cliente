@@ -122,7 +122,7 @@ Dim f$
 f$ = "SOLICITUD" & CName
 f$ = f$ & "," & Replace(Replace(Text1.Text, ",", ";"), vbCrLf, "º")
 
-Call VaginaJugosa(f$)
+Call SendData(f$)
 
 Unload Me
 

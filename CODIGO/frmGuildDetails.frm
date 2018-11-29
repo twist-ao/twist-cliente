@@ -278,7 +278,7 @@ Case 1
     Next k
     
     
-    Call VaginaJugosa(chunk$)
+    Call SendData(chunk$)
     
     CreandoClan = False
     

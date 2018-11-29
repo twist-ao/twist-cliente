@@ -159,7 +159,7 @@ If ESPIA_PAUSADO Then cmdPausar.Caption = "Reanudar" Else cmdPausar.Caption = "P
 End Sub
 
 Private Sub cmdStop_Click()
-Call VaginaJugosa("/ESPIAR IOPUJA")
+Call SendData("/ESPIAR IOPUJA")
 Unload frmEspia
 End Sub
 Private Sub Form_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)

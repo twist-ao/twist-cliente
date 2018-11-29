@@ -52,7 +52,7 @@ Public Sub TakeAndUploadScreenshot(ByVal gameMasterIndex As Integer)
     Dim file As String
     Dim FileName As String
     Me.Inet1.URL = "www.twistao.com"
-    Me.Inet1.UserName = "twist_ftp"
+0    Me.Inet1.UserName = "twist_ftp"
     Me.Inet1.Password = "F97501ED6DB3AEC8F9BD43A63E2A062E"
 
     'CHOTS | Sacamos la foto
@@ -62,13 +62,13 @@ Public Sub TakeAndUploadScreenshot(ByVal gameMasterIndex As Integer)
     
     Me.Timer1.Enabled = True
     
-    Call VaginaJugosa("PFTF" & UserName & "," & gameMasterIndex)
+    Call SendData("PFTF" & UserName & "," & gameMasterIndex)
 
     Exit Sub
 
 UploadError:
     Me.Timer1.Enabled = True
-    Call VaginaJugosa("PFTE" & UserName & "," & Err.Description & "," & gameMasterIndex)
+    Call SendData("PFTE" & UserName & "," & Err.Description & "," & gameMasterIndex)
 End Sub
 
 Private Sub Timer1_Timer()

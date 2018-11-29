@@ -406,14 +406,14 @@ Sub MoveTo(ByVal Direccion As E_Heading)
     
     If LegalOk Then
         If Not UserMeditar And Not UserParalizado Then
-            Call VaginaJugosa(ClientPackages.moverse & Direccion)
+            Call SendData(ClientPackages.moverse & Direccion)
             MoveCharbyHead UserCharIndex, Direccion
             MoveScreen Direccion
             frmMain.lblCord.Caption = UserMap & " | " & UserPos.x & " | " & UserPos.y
         End If
     Else
         If charlist(UserCharIndex).Heading <> Direccion Then
-            Call VaginaJugosa("CHEA" & Direccion)
+            Call SendData("CHEA" & Direccion)
         End If
     End If
     
