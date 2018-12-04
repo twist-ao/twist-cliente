@@ -719,6 +719,7 @@ On Error Resume Next
     
 
 DialogosClanes.Activo = False
+colorClan = RGB(0, 160, 120)
 enParty = False
 Call frmMain.PuedeOro(True)
 
